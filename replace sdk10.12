@@ -1,0 +1,6 @@
+1、访问 https://github.com/phracker/MacOSX-SDKs/releases
+2、下载 MacOSX10.12.sdk.tar.xz
+3、解压
+4、复制到/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
+5、按住ctrl+alt键拖动，生成快捷方式
+6、rename为MacOSX.sdk即可
