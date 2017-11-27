@@ -1,19 +1,28 @@
-export PATH=$PATH:/volumes/android/bin
-export PATH=$PATH:/volumes/android/android-sdk/platform-tools/:/volumes/android/android-sdk/tools
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home  
+export CLASSPAHT=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar  
+export PATH=$JAVA_HOME/bin:$PATH
+
+# 设置macport环境变量
 export PATH=/opt/local/bin:$PATH
-
-##
-# Your previous /Users/sharlion/.bash_profile file was backed up as /Users/sharlion/.bash_profile.macports-saved_2017-07-13_at_23:30:57
-##
-
-# MacPorts Installer addition on 2017-07-13_at_23:30:57: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
+export PATH=/opt/local/sbin:$PATH
 
 # 设置文件打开数量为1024
 ulimit -S -n 1024
 
-# MOKEE同步源码高级配置
-export MK_AOSP_REMOTE=ustc
+# 设置环境变量
+export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/usr/local/curl/bin:$PATH"
+export PATH="/usr/local/opt/zip/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/bin:/usr/local/opt/icu4c/sbin:/usr/local/opt/bison/bin:$PATH"
 
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/libexec/gnubin:/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/curl/bin:$PATH
+# 设置repo 
+export PATH="/Volumes/android/bin:$PATH"
+
+# 设置mokee同步源码
+# export MK_AOSP_REMOTE=caf
+export MK_AOSP_REMOTE=ustc
+# export MK_AOSP_REMOTE=tuna
+# export MK_AOSP_REMOTE=aosp
+# export MK_AOSP_REMOTE=mokee
