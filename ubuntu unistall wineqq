@@ -1,0 +1,3 @@
+rm -rf ~/.wine
+rm -rf ~/.local/share/applications/wine-QQ.desktop
+rm -rf ~/.local/share/icons/hicolor/256x256/apps/QQ.png
