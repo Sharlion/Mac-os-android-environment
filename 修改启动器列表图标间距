@@ -1,0 +1,7 @@
+改变行数量：
+defaults write com.apple.dock springboard-rows -int 7
+改变列数量：
+defaults write com.apple.dock springboard-columns -int 7
+使改变生效：
+killall Dock
+后面的数字可以根据自己爱好调整
