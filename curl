@@ -1,4 +1,4 @@
-1、先到http://curl.haxx.se/ 上下载最新的curl源码(编译android源码需要7.55.1）
+1、先到http://curl.haxx.se/(or http://pkgs.fedoraproject.org/repo/pkgs/curl/) 上下载最新的curl源码(编译android源码需要7.55.1）
 2、终端：进入解压后的curl目录
 3、终端：./configure --prefix=/usr/local/curl (设置安装路径)
 4、终端：make (编译)
