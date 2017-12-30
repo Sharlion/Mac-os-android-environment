@@ -1,0 +1,8 @@
+sudo port -v selfupdate
+会卡住
+sudo vim /opt/local/etc/macports/sources.conf
+参考https://trac.macports.org/wiki/Mirrors#Portfiles
+修改rsync://rsync.macports.org/release/tarballs/ports.tar [default]
+保存，退出
+再次执行sudo port -v selfupdate
+完成
