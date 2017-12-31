@@ -3,3 +3,13 @@
 3、终端：./configure --with-darwinssl --prefix=/usr/local/curl (设置安装路径)
 4、终端：make (编译)
 5、终端：make install (安装)
+
+brew安装详细步骤
+brew info curl （From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/curl.rb）
+根据以上，可以开工了
+1、git clone git@github.com:Homebrew/homebrew-core.git
+2、git log ./Formula/curl.rb | less
+3、git checkout 8eabc470e5e5d2f7f74bb6ce22cb839961ba70a5(前6位就可以了，commit就是你需要的版本的commit）
+4、brew install ./Formula/curl.rb --with-openssl --prefix=/usr/local/curl(设置安装路径)
+5、在.bash_profile里面添加 export PATH="/usr/local/opt/curl/bin:$PATH"
+6、大功告成
