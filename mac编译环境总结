@@ -2,4 +2,4 @@
 安装port
 POSIXLY_CORRECT=1 sudo port install gmake libsdl git gnupg bison
 安装brew
-brew install findutils gnu-sed curl zip openssl icu4c gnupg flex gperf pngcrush xsltproc lzop maven tmux screen w3m ncftp pngquant rsync
+brew install findutils gnu-sed curl zip openssl icu4c gnupg flex gperf pngcrush gawk wget lzop maven tmux screen w3m ncftp pngquant rsync
